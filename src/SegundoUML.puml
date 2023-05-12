@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:New Actor: as ac
+ac --(Identificarse)
+ac --(Pagar)
+ac --(Elegir Mensajero)
+ac --(Confirmar)
+(Pagar) <--(Pagar con tarjeta)
+(Pagar) <--(Pagar con Transferencia)
+(Identificarse) <..(Registrarse) : <<extend>>
+@enduml
