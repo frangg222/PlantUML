@@ -6,6 +6,6 @@ cli --(Meter dinero)
 cli --(Pedir azucar)
 cli --(Pedir producto)
 cli --(cancelar)
-(Pedir producto) ..>(Devolver dinero)
-(cancelar) ..>(Devolver dinero)
+(Pedir producto) ..>(Devolver dinero) : <<include>>
+(cancelar) ..>(Devolver dinero) : <<include>>
 @enduml
