@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+:ciudadano: as usu1
+:ciudadano extranjero: as usu2
+usu1 --(Registrar entrada)
+usu2 -->usu1
+usu2 --(Tomar huellas)
+(Registrar entrada) <..(Tomar huellas) : <<extend>>
+@enduml
