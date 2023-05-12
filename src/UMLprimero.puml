@@ -1,0 +1,11 @@
+@startuml
+
+'https://plantuml.com/sequence-diagram
+:Cliente: as cli
+cli --(Meter dinero)
+cli --(Pedir azucar)
+cli --(Pedir producto)
+cli --(cancelar)
+(Pedir producto) ..>(Devolver dinero)
+(cancelar) ..>(Devolver dinero)
+@enduml
