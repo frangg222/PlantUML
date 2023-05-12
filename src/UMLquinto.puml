@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+usecase SD as "sacar dinero
+--
++solicitud hecha
+"
+(Retener tarjeta) ..>SD :<<Extend>>
+note "Decription \n condicion \n {historia sospechosa} \n punto de extension: \n solicitud hecha" as nota
+(Retener tarjeta) ..nota
+nota ..SD
+@enduml
